@@ -12,20 +12,24 @@
 
 ## 在线订阅方法
 
-在 app 里「源管理 → 添加网络源」填入下面的直链（raw.githubusercontent.com 免登录拉取）：
+⚠️ 订阅填的是 **JSON 描述文件**（不是 jar 直链）。app 会请求该 JSON（字段: version / entry_package / download_url），下载 download_url 的 jar 保存为 `jars/<entry_package>.jar`，并加载 `com.github.eprendre.<entry_package>.SourceEntry`。
 
-```
-https://raw.githubusercontent.com/freefly22/tingshu-free-jar/main/free_all_v7.jar
-```
+**订阅链接（二选一）:**
 
-国内网络直连 raw 慢/被墙时可用加速镜像：
-
+海外/可直连 GitHub:
 ```
-https://ghproxy.net/https://raw.githubusercontent.com/freefly22/tingshu-free-jar/main/free_all_v7.jar
+https://raw.githubusercontent.com/freefly22/tingshu-free-jar/main/source.json
 ```
 
-也可以手动下载 jar 放到：
+国内推荐（jar 下载走 ghproxy 加速）:
+```
+https://raw.githubusercontent.com/freefly22/tingshu-free-jar/main/source_ghproxy.json
+```
 
+> entry_package 必须与 jar 内 SourceEntry 包名段一致（当前为 free_all）。
+> 添加对话框会自动填入剪贴板里含 ".json" 的链接。
+
+手动安装 jar 放到:
 ```
 /sdcard/Android/data/com.github.eprendre.tingshu/files/jars/free_all.jar
 ```
