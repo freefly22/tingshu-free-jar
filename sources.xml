@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sources>
+    <!-- 我的听书 外置JAR源订阅清单 -->
+    <source>
+        <name>免费源合集(懒人听书/恋听网/喜马拉雅)</name>
+        <category>免费源</category>
+        <desc>懒人听书+恋听网+喜马拉雅 三源合一, 在线更新</desc>
+        <url>https://raw.githubusercontent.com/freefly22/tingshu-free-jar/main/free_all_v7.jar</url>
+        <version>7</version>
+        <md5>c289ee9cf547ff9b7a309985e132fbfa</md5>
+    </source>
+</sources>
